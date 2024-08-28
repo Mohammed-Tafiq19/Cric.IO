@@ -1,0 +1,102 @@
+.player-profiles {
+  padding: 20px;
+}
+
+.player-profiles-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.player-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.player-item {
+  cursor: pointer;
+  text-align: center;
+}
+
+.player-image {
+  width: 150px; /* Set a fixed width for the player image */
+  height: 150px; /* Set a fixed height for the player image */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 50%;
+}
+
+.selected-player-details {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.player-details {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 80%;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.selected-player-details button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.selected-player-details button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .player-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .player-profiles-title {
+    font-size: 20px;
+  }
+
+  .player-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+
+
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Responsive Styles */
+
+/* Previous responsive styles here */

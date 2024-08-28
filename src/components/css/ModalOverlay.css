@@ -1,0 +1,81 @@
+/* ModalOverlay.css */
+/* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  } */
+  .image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+  
+  .image-modal {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px; /* Max width for larger screens */
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .image-modal p {
+    max-width: 100%; /* Ensure text content does not exceed image width */
+    word-wrap: break-word; /* Enable word wrapping */
+    overflow-y: auto;  /*Enable scrolling if content exceeds available space*/
+    font-size: 16px; /* Adjust font size as needed */
+    line-height: 1.6;
+    max-height: 30vh; 
+  }
+
+  .modal-text h3{
+    text-align: center;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .image-modal {
+      width: 90%;
+      max-width: 500px;
+    }
+  }
+  
+  /* Media query for even smaller screens */
+  @media screen and (max-width: 576px) {
+    .image-modal {
+      width: 95%;
+      max-width: 400px;
+    }
+  }
+  
+
+  

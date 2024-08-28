@@ -1,0 +1,115 @@
+.cricket-news-container {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.news-heading {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.news-item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+}
+
+.news-title {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.news-summary {
+  color: #666;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.news-title:hover {
+  text-decoration: underline;
+}
+
+/* CSS for responsive layout */
+/* Regular styles */
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 100%; /* Use full width of the container */
+  padding: 10px; /* Adjust padding for better appearance */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.search-bar input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+/* .read-more {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #0056b3;
+} */
+
+button{
+  margin-left: 10px;
+}
+/* button:hover{
+  background-color: #007bff;
+} */
+
+
+
+@media only screen and (max-width: 768px) {
+  
+  .cricket-news-container {
+    padding: 20px;
+    width: 90%; 
+  }
+  .news-heading {
+    font-size: 24px;
+  }
+  .search-bar {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cricket-news-container {
+    padding: 10px;
+    width: 100%;
+  }
+  .news-heading {
+    font-size: 20px;
+  }
+}

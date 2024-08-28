@@ -1,0 +1,36 @@
+/* LiveScore.css */
+
+.live-score {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .live-score h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .live-score ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .live-score li {
+    margin-bottom: 15px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .live-score {
+      width: 90%;
+    }
+  
+    .live-score h2 {
+      font-size: 20px;
+    }
+  }
+  

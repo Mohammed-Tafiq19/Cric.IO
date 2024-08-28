@@ -1,0 +1,32 @@
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+/* CSS for responsiveness */
+/* Regular styles */
+
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller devices */
+  .footer-container {
+    padding: 0 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Styles for smartphones and smaller devices */
+  .footer-text {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
